@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Sonali ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+color:white;
+background:linear-gradient(45deg,#ff4e8a,#6a5cff);
+overflow-x:hidden;
+}
+
+h1{
+font-size:55px;
+margin-top:30px;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px white;}
+to{ text-shadow:0 0 40px yellow;}
+}
+
+section{
+padding:60px 20px;
+}
+
+.cake{
+font-size:120px;
+margin:20px;
+}
+
+.balloons{
+font-size:60px;
+animation:float 3s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-25px)}
+100%{transform:translateY(0)}
+}
+
+.gallery img{
+width:260px;
+margin:10px;
+border-radius:15px;
+box-shadow:0 0 10px black;
+}
+
+.love{
+font-size:26px;
+max-width:700px;
+margin:auto;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<canvas id="fireworks"></canvas>
+
+<section>
+
+<h1>🎉 Happy Birthday Mara bacha 🎉</h1>
+
+<div class="cake">🎂</div>
+
+<p class="love">
+Meri pyari Sonali ❤️  
+Tum meri life ki sabse beautiful gift ho.  
+Jab se tum meri life me aayi ho sab kuch acha lagne laga hai.  
+Happy Birthday My Love 🎂
+</p>
+
+<div class="balloons">
+🎈 🎈 🎈 🎈 🎈
+</div>
+
+</section>
+
+<section>
+
+<h1>📷 Our Beautiful Memories</h1>
+
+<div class="gallery">
+
+<img src="images/photo1.jpg">
+<img src="images/photo2.jpg">
+<img src="images/photo3.jpg">
+<img src="images/photo4.jpg">
+<img src="images/photo5.jpg">
+<img src="images/photo6.jpg">
+
+</div>
+
+</section>
+
+<section>
+
+<h1>💖 Message For You</h1>
+
+<p class="love">
+
+Sonali ❤️  
+**My Love, My Bacha,**
+
+Jab se tum meri zindagi mein aayi ho, sach kahun to sab kuch badal sa gaya hai. Tumhe dekh kar mere dil mein ek ajeeb si khushi aur sukoon mehsoos hota hai. Tumse baat karke meri saari thakaan door ho jaati hai. Aisa lagta hai jaise meri duniya hi tum ho.
+
+Main tumse bahut pyar karta hoon, bacha. Tumhare bina jeene ka khayal bhi dil ko achha nahi lagta. Dil karta hai bas hamesha tumhe apni baahon mein lekar hug karta rahun aur tumhe kabhi door na hone doon.
+
+Main har roz bhagwan se bas itni dua karta hoon ki wo tumhe hamesha khush rakhe, tumhara khayal rakhe, aur tumhe meri zindagi mein hamesha ke liye banaye rakhe. Tum meri khushi ho, meri jaan ho.
+
+Mujhe bahut achha lagta hai jab tum mujhse baat karti ho, jab tum mujhe hug karti ho. Tum meri **bacha, babu, shona aur meri jaan** ho.
+
+**Wish you a very very Happy Birthday, meri jaan.**
+Hamesha khush rehna, hamesha muskurate rehna.
+
+Main tumse bahut pyar karta hoon.  
+Main chahta hoon ki tum hamesha khush raho.  
+Tum meri life ki sabse special person ho.
+
+**I LOVE YOU, MERI WIFE ❤️**
+
+**Happy Birthday, Bacha 🎂**
+
+
+</p>
+
+</section>
+
+<script>
+
+var canvas=document.getElementById("fireworks");
+var ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+
+
+ctx.fillStyle="rgba(0,0,0,0.1)";
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+for(let i=0;i<6;i++){
+
+ctx.beginPath();
+ctx.arc(Math.random()*canvas.width,
+Math.random()*canvas.height,
+5,0,Math.PI*2);
+
+ctx.fillStyle="yellow";
+ctx.fill();
+
+}
+
+}
+
+setInterval(firework,200);
+
+</script>
+
+</body>
+</html>
